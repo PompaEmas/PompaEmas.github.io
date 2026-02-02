@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Profesional | Selamat Datang</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container navbar__container">
+            <a href="#" class="navbar__logo">J.DOE</a>
+            <ul class="navbar__links">
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#projects">Projek</a></li>
+                <li><a href="#achievements">Pencapaian</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero" id="home">
+        <div class="container">
+            <div class="hero__content">
+                <h1 class="hero__title">Halo, Saya <span class="text-gradient">Edwin Manshande</span></h1>
+                <p class="hero__subtitle">Full-stack Developer & UI/UX Designer yang berfokus pada pembangunan pengalaman digital yang bermakna.</p>
+                <div class="hero__actions">
+                    <a href="#projects" class="btn btn--primary">Lihat Projek</a>
+                    <a href="#contact" class="btn btn--outline">Hubungi Saya</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Tentang Saya</h2>
+                <div class="section__underline"></div>
+            </div>
+            <div class="about__grid">
+                <div class="about__text">
+                    <p>Saya adalah seorang profesional kreatif dengan pengalaman lebih dari 5 tahun di bidang teknologi. Saya memiliki hasrat untuk memecahkan masalah kompleks melalui kode yang bersih dan desain yang intuitif.</p>
+                    <p>Fokus utama saya saat ini adalah mengembangkan aplikasi web yang skalabel dan memberikan nilai nyata bagi pengguna. Saya percaya bahwa kolaborasi dan pembelajaran berkelanjutan adalah kunci sukses dalam industri ini.</p>
+                    <div class="skills">
+                        <span class="skill-tag">React.js</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">UI/UX Design</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Projek Unggulan</h2>
+                <div class="section__underline"></div>
+            </div>
+            <div class="projects__grid">
+                <div class="project-card">
+                    <div class="project-card__image" style="background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80')"></div>
+                    <div class="project-card__content">
+                        <h3>E-Commerce Dashboard</h3>
+                        <p>Sistem manajemen inventaris real-time dengan integrasi analitik data tingkat lanjut.</p>
+                        <a href="#" class="project-card__link">Lihat Detail <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-card__image" style="background-image: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80')"></div>
+                    <div class="project-card__content">
+                        <h3>SaaS Landing Page</h3>
+                        <p>Desain responsif dengan optimasi SEO tinggi dan performa loading di bawah 1 detik.</p>
+                        <a href="#" class="project-card__link">Lihat Detail <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-card__image" style="background-image: url('https://images.unsplash.com/photo-1551288049-bbbda536339a?auto=format&fit=crop&w=800&q=80')"></div>
+                    <div class="project-card__content">
+                        <h3>FinTech Mobile App</h3>
+                        <p>Prototipe aplikasi keuangan pribadi dengan fitur enkripsi data end-to-end.</p>
+                        <a href="#" class="project-card__link">Lihat Detail <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section achievements" id="achievements">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Pencapaian</h2>
+                <div class="section__underline"></div>
+            </div>
+            <div class="achievements__list">
+                <div class="achievement-item">
+                    <div class="achievement-item__icon"><i class="fas fa-trophy"></i></div>
+                    <div class="achievement-item__info">
+                        <h4>Pemenang Hackathon Nasional 2022</h4>
+                        <p>Mengembangkan solusi manajemen limbah berbasis IoT dalam waktu 48 jam.</p>
+                    </div>
+                </div>
+                <div class="achievement-item">
+                    <div class="achievement-item__icon"><i class="fas fa-certificate"></i></div>
+                    <div class="achievement-item__info">
+                        <h4>AWS Certified Solutions Architect</h4>
+                        <p>Sertifikasi profesional untuk merancang sistem terdistribusi di cloud.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__info">
+                    <h3>Mari Terkoneksi</h3>
+                    <p>Saya selalu terbuka untuk peluang baru dan kolaborasi yang menarik.</p>
+                    <div class="footer__socials">
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="footer__copyright">
+                    <p>&copy; 2023 John Doe. Dibuat dengan dedikasi.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+// Mobile Menu Toggle
+const mobileMenu = document.querySelector('#mobile-menu');
+const navLinks = document.querySelector('.navbar__links');
+
+mobileMenu.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    // Burger Animation
+    mobileMenu.classList.toggle('is-active');
+});
+
+// Add active class style for mobile via JS
+const style = document.createElement('style');
+style.innerHTML = `
+    @media (max-width: 768px) {
+        .navbar__links.active {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 80px;
+            left: 0;
+            width: 100%;
+            background: white;
+            padding: 2rem;
+            box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+        }
+        .navbar__links.active li {
+            margin: 1rem 0;
+        }
+        .navbar__toggle.is-active .bar:nth-child(2) { opacity: 0; }
+        .navbar__toggle.is-active .bar:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+        .navbar__toggle.is-active .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+    }
+`;
+document.head.appendChild(style);
+
+// Smooth Scroll for Navigation Links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            window.scrollTo({
+                top: target.offsetTop - 80,
+                behavior: 'smooth'
+            });
+            // Close mobile menu if open
+            navLinks.classList.remove('active');
+            mobileMenu.classList.remove('is-active');
+        }
+    });
+});
+
+// Intersection Observer for Fade-in Animations
+const observerOptions = {
+    threshold: 0.1
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+        }
+    });
+}, observerOptions);
+
+// Apply initial styles and observe elements
+document.querySelectorAll('.project-card, .achievement-item, .section__header').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(30px)';
+    el.style.transition = 'all 0.6s ease-out';
+    observer.observe(el);
+});
+
+// Navbar background change on scroll
+window.addEventListener('scroll', () => {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 50) {
+        navbar.style.padding = '10px 0';
+        navbar.style.backgroundColor = 'rgba(255, 255, 255, 0.98)';
+    } else {
+        navbar.style.padding = '0';
+        navbar.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
+    }
+});
+:root {
+    --primary-color: #2563eb;
+    --secondary-color: #64748b;
+    --dark-color: #0f172a;
+    --light-color: #f8fafc;
+    --accent-color: #38bdf8;
+    --text-main: #334155;
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: var(--text-main);
+    background-color: var(--light-color);
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.section {
+    padding: 100px 0;
+}
+
+.section__header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section__title {
+    font-size: 2.5rem;
+    color: var(--dark-color);
+    margin-bottom: 0.5rem;
+}
+
+.section__underline {
+    width: 60px;
+    height: 4px;
+    background: var(--primary-color);
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+/* Navbar */
+.navbar {
+    height: 80px;
+    background: rgba(255, 255, 255, 0.95);
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.navbar__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar__logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.navbar__links {
+    display: flex;
+    list-style: none;
+}
+
+.navbar__links li {
+    margin-left: 2rem;
+}
+
+.navbar__links a {
+    text-decoration: none;
+    color: var(--dark-color);
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.navbar__links a:hover {
+    color: var(--primary-color);
+}
+
+.navbar__toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: var(--dark-color);
+    transition: var(--transition);
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background: radial-gradient(circle at top right, #e0f2fe, #f8fafc);
+    padding-top: 80px;
+}
+
+.hero__title {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+.text-gradient {
+    background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero__subtitle {
+    font-size: 1.25rem;
+    max-width: 600px;
+    margin-bottom: 2rem;
+    color: var(--secondary-color);
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition);
+    cursor: pointer;
+    border: none;
+}
+
+.btn--primary {
+    background: var(--primary-color);
+    color: white;
+    margin-right: 1rem;
+}
+
+.btn--primary:hover {
+    background: #1d4ed8;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(37, 99, 235, 0.2);
+}
+
+.btn--outline {
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.btn--outline:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+/* About Section */
+.about__grid {
+    display: grid;
+    gap: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.skill-tag {
+    display: inline-block;
+    background: #e2e8f0;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    margin: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+/* Projects Section */
+.projects__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: var(--transition);
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+}
+
+.project-card__image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.project-card__content {
+    padding: 1.5rem;
+}
+
+.project-card__content h3 {
+    margin-bottom: 0.75rem;
+    color: var(--dark-color);
+}
+
+.project-card__link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Achievements */
+.achievements__list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.achievement-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 12px;
+    border-left: 5px solid var(--primary-color);
+}
+
+.achievement-item__icon {
+    font-size: 1.5rem;
+    color: #f59e0b;
+    margin-right: 1.5rem;
+    padding-top: 0.2rem;
+}
+
+/* Footer */
+.footer {
+    background: var(--dark-color);
+    color: white;
+    padding: 4rem 0 2rem;
+}
+
+.footer__content {
+    text-align: center;
+}
+
+.footer__socials {
+    margin: 2rem 0;
+}
+
+.social-link {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 1rem;
+    transition: var(--transition);
+}
+
+.social-link:hover {
+    color: var(--accent-color);
+}
+
+.footer__copyright {
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    opacity: 0.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar__links {
+        display: none;
+    }
+
+    .navbar__toggle {
+        display: block;
+    }
+
+    .hero__title {
+        font-size: 2.5rem;
+    }
+
+    .section {
+        padding: 60px 0;
+    }
+}
