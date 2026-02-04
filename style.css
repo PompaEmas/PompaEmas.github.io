@@ -18,8 +18,22 @@ body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
     color: var(--text-main);
-    background-color: var(--light-color);
+    background-image: url("img/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     scroll-behavior: smooth;
+    margin: 0;
+}
+
+/* overlay putih transparan */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.5); /* atur 0.5–0.8 */
+  pointer-events: none;
+  z-index: -1;
 }
 
 .container {
