@@ -1,6 +1,7 @@
 // Mobile Menu Toggle
 const mobileMenu = document.querySelector('#mobile-menu');
 const navLinks = document.querySelector('.navbar__links');
+let isAnimating = false;
 
 mobileMenu.addEventListener('click', () => {
     navLinks.classList.toggle('active');
@@ -32,6 +33,71 @@ style.innerHTML = `
     }
 `;
 document.head.appendChild(style);
+
+// Carousel Functionality
+const track = document.querySelector('.projects__track');
+let slides = Array.from(track.children);
+
+const nextBtn = document.querySelector('.carousel-btn.next');
+const prevBtn = document.querySelector('.carousel-btn.prev');
+
+const firstClone = slides[0].cloneNode(true);
+const lastClone = slides[slides.length - 1].cloneNode(true);
+
+const trackStyle = window.getComputedStyle(track);
+let gap = parseInt(trackStyle.columnGap || trackStyle.gap || 0);
+
+
+track.appendChild(firstClone);
+track.insertBefore(lastClone, slides[0]);
+
+slides = Array.from(track.children);
+
+let index = 1;
+let slideWidth = slides[index].offsetWidth + gap;
+
+track.style.transform = `translateX(-${slideWidth * index}px)`;
+
+// update width on resize
+window.addEventListener('resize', () => {
+  slideWidth = slides[index].offsetWidth + gap;
+  track.style.transition = 'none';
+  track.style.transform = `translateX(-${slideWidth * index}px)`;
+});
+
+function moveToIndex() {
+  if (isAnimating) return;
+  isAnimating = true;
+  isAnimating = true;
+  track.style.transition = 'transform 0.4s ease';
+  track.style.transform = `translateX(-${slideWidth * index}px)`;
+}
+
+nextBtn.addEventListener('click', () => {
+  index++;
+  moveToIndex();
+});
+
+prevBtn.addEventListener('click', () => {
+  index--;
+  moveToIndex();
+});
+
+track.addEventListener('transitionend', () => {
+  isAnimating = false;
+
+  if (slides[index] === firstClone) {
+    track.style.transition = 'none';
+    index = 1;
+    track.style.transform = `translateX(-${slideWidth * index}px)`;
+  }
+
+  if (slides[index] === lastClone) {
+    track.style.transition = 'none';
+    index = slides.length - 2;
+    track.style.transform = `translateX(-${slideWidth * index}px)`;
+  }
+});
 
 // Smooth Scroll for Navigation Links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {

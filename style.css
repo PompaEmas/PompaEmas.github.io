@@ -6,6 +6,7 @@
     --accent-color: #38bdf8;
     --text-main: #334155;
     --transition: all 0.3s ease;
+    --carousel-gap: 24px;
 }
 
 * {
@@ -249,6 +250,73 @@ body::before {
     text-decoration: none;
     font-weight: 600;
 }
+/* Projects Carousel */
+.projects__viewport {
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+}
+
+.projects__track {
+  display: flex;
+  gap: var(--carousel-gap);
+  gap: var(--carousel-gap);
+  
+}
+
+.projects-carousel {
+  position: relative; 
+}
+
+.projects-carousel .project-card {
+  min-width: calc(100% - var(--carousel-gap));
+  box-sizing: border-box;
+}
+
+.carousel-controls {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+
+  z-index: 10;
+
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  font-size: 26px;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease;
+}
+
+.carousel-btn.prev {
+  left: 12px;
+}
+
+.carousel-btn.next {
+  right: 12px;
+}
+
+.carousel-btn:hover {
+  background: rgba(0, 0, 0, 0.85);
+  transform: scale(1.1);
+}
+
+.carousel-btn:active {
+  transform: scale(0.95);
+}
+
 
 /* Achievements */
 .achievements__list {
