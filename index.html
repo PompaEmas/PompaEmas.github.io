@@ -13,7 +13,22 @@
 <body>
     <nav class="navbar">
         <div class="container navbar__container">
-            <a href="#" class="navbar__logo">Ed Logo</a>
+            <a href="#" class="navbar__logo">
+                <svg
+                    width="40"
+                    height="40"
+                    viewBox="0 0 49.999997 49.999997"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g id="layer1">
+                        <path
+                            d="M 64.399593,141.57559 V 91.763642 H 113.39265 L 98.203574,110.67993 72.929393,97.735249 v 14.892611 l 41.470197,23.16418 v 5.9716 L 72.929393,118.59947 v 17.00451 l 10.002179,-7.32396 13.148758,13.29557 z"
+                            fill="currentColor"
+                            transform="matrix(1,0,0,1.0037752,-64.399591,-92.110067)" />
+                    </g>
+                </svg>
+                
+            </a>
             <ul class="navbar__links">
                 <li><a href="#home">Beranda</a></li>
                 <li><a href="#about">Tentang</a></li>
@@ -33,7 +48,7 @@
         <div class="container">
             <div class="hero__content">
                 <h1 class="hero__title">Halo, Saya <span class="text-gradient">Edwin Manshande</span></h1>
-                <p class="hero__subtitle">Full-stack Developer & UI/UX Designer yang berfokus pada pembangunan pengalaman digital yang bermakna.</p>
+                <p class="hero__subtitle">Pengembang pemula yang tertarik pada game, web, dan dunia kreatif.</p>
                 <div class="hero__actions">
                     <a href="#projects" class="btn btn--primary">Lihat Projek</a>
                     <a href="#contact" class="btn btn--outline">Hubungi Saya</a>
@@ -50,7 +65,9 @@
             </div>
             <div class="about__grid">
                 <div class="about__text">
-                    <p>Saya punya rasa ingin tahu pada banyak hal (kadang terlalu banyak). Tapi sekarang, fokus utama saya ada pada desain board game/video game, desain web, serta bidang-bidang kreatif yang dekat dengan seni.</p>
+                    <p>Saya memiliki rasa ingin tahu yang besar terhadap banyak bidang, terutama yang berada di persimpangan antara teknologi dan kreativitas.</p>
+                    <p>Saat ini, fokus utama saya ada pada desain board game dan video game, pengembangan web dasar, serta eksplorasi bidang kreatif seperti penulisan cerita, world-building, dan desain karakter.</p>
+                    <p>Saya masih dalam tahap belajar dan eksplorasi, namun saya menikmati proses membangun, mencoba, dan memahami bagaimana sebuah sistem atau karya dapat bekerja secara utuh.</p>
                     <div class="skills">
                         <span class="skill-tag">React.js</span>
                         <span class="skill-tag">Node.js</span>
@@ -66,7 +83,7 @@
     <section class="section projects" id="projects">
         <div class="container">
             <div class="section__header">
-                <h2 class="section__title">Projek Unggulan</h2>
+                <h2 class="section__title">Projek Eksplorasi</h2>
                 <div class="section__underline"></div>
             </div>
 
@@ -76,27 +93,44 @@
                 <div class="projects__viewport">
                     <div class="projects__track">
                         <div class="project-card">
-                            <div class="project-card__image" style="background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80')"></div>
+                            <div class="project-card__image" style="background-image: url('https://images.unsplash.com/photo-1653405507161-da7d205d86f4?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"></div>
                             <div class="project-card__content">
-                                <h3>E-Commerce Dashboard</h3>
-                                <p>Sistem manajemen inventaris real-time dengan integrasi analitik data tingkat lanjut.</p>
+                                <h3>The Game of AHCAG</h3>
+                                <p>Game berbasis terminal yang dibuat dengan Python, berfokus pada pengumpulan permata dengan mekanik permainan sederhana berbasis teks.</p>
+                                <a href="https://github.com/PompaEmas/The-Game-of-AHCAG/tree/main/project" class="project-card__link">Github Repo <i class="fas fa-arrow-right"></i></a><br>
+                                <a href="https://youtu.be/PERE4-48DgI?si=hCLjfenwNynW1Whm" class="project-card__link">Demo Video <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-card__image" style="background-image: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"></div>
+                            <div class="project-card__content">
+                                <h3>Food Fight Comic</h3>
+                                <p>Sebuah komik yang menceritakan asal-usul <em>food fight</em>, di mana makanan hidup dan saling bertarung.</p>
+                                <a href="https://karyakarsa.com/EdwinKomik/premis-food-fight-episode-1" class="project-card__link">Lihat Detail <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-card__image" style="background-image: url('https://media.istockphoto.com/id/2102362514/id/foto/gambar-bendera.jpg?s=1024x1024&w=is&k=20&c=7Yy60wOZUwvBLsDR8vb6G4xHbpXdKpeI4AxteAqBqAw=')"></div>
+                            <div class="project-card__content">
+                                <h3>Hold the Flag</h3>
+                                <p>Sebuah board game di mana para pemain saling berebut bendera untuk meraih kemenangan.</p>
                                 <a href="#" class="project-card__link">Lihat Detail <i class="fas fa-arrow-right"></i></a>
                             </div>
                         </div>
                         <div class="project-card">
-                            <div class="project-card__image" style="background-image: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80')"></div>
+                            <div class="project-card__image" style="background-image: url('https://images.unsplash.com/photo-1697898108738-61f075f39b6d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGZvb2QlMjBhcnR3b3JrfGVufDB8fDB8fHww')"></div>
                             <div class="project-card__content">
-                                <h3>SaaS Landing Page</h3>
-                                <p>Desain responsif dengan optimasi SEO tinggi dan performa loading di bawah 1 detik.</p>
-                                <a href="#" class="project-card__link">Lihat Detail <i class="fas fa-arrow-right"></i></a>
+                                <h3>Food Fight Artwork</h3>
+                                <p>Artwork bertema food fight.</p>
+                                <a href="https://www.instagram.com/p/CsitQoivMXE/" class="project-card__link">Lihat Detail <i class="fas fa-arrow-right"></i></a>
                             </div>
                         </div>
                         <div class="project-card">
-                            <div class="project-card__image" style="background-image: url('https://images.unsplash.com/photo-1551288049-bbbda536339a?auto=format&fit=crop&w=800&q=80')"></div>
+                            <div class="project-card__image" style="background-image: url('https://images.unsplash.com/photo-1510127034890-ba27508e9f1c?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"></div>
                             <div class="project-card__content">
-                                <h3>FinTech Mobile App</h3>
-                                <p>Prototipe aplikasi keuangan pribadi dengan fitur enkripsi data end-to-end.</p>
-                                <a href="#" class="project-card__link">Lihat Detail <i class="fas fa-arrow-right"></i></a>
+                                <h3>Fotografi</h3>
+                                <p>Foto karya saya.</p>
+                                <a href="https://www.instagram.com/p/Cs3RWqlPFIl/" class="project-card__link">Lihat Detail <i class="fas fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>    
@@ -115,17 +149,19 @@
             </div>
             <div class="achievements__list">
                 <div class="achievement-item">
-                    <div class="achievement-item__icon"><i class="fas fa-trophy"></i></div>
+                    <div class="achievement-item__icon"><i class="fas fa-certificate"></i></div>
                     <div class="achievement-item__info">
-                        <h4>Pemenang Hackathon Nasional 2022</h4>
-                        <p>Mengembangkan solusi manajemen limbah berbasis IoT dalam waktu 48 jam.</p>
+                        <h4>Python Certificate (Harvard - Online)</h4>
+                        <p>Kursus pengantar Python, belajar variabel, struktur data, fungsi, dan algoritma sederhana. Membuat proyek kecil untuk melatih kemampuan coding.</p>
+                        <a href="https://certificates.cs50.io/cac453ad-e4d0-456c-96b2-0922646ee77e.png?size=A4" class="project-card__link">Lihat Sertifikat <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
                 <div class="achievement-item">
                     <div class="achievement-item__icon"><i class="fas fa-certificate"></i></div>
                     <div class="achievement-item__info">
-                        <h4>AWS Certified Solutions Architect</h4>
-                        <p>Sertifikasi profesional untuk merancang sistem terdistribusi di cloud.</p>
+                        <h4>Scratch Certificate (Harvard - Online)</h4>
+                        <p>Kursus online dari Harvard tentang pemrograman menggunakan Scratch. Mempelajari logika dasar, pengulangan, percabangan, dan membuat proyek interaktif kecil.</p>
+                        <a href="https://certificates.cs50.io/41d2014d-247d-4947-95f9-eb7e45959e23.png?size=A4" class="project-card__link">Lihat Sertifikat  <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -139,14 +175,14 @@
                     <h3>Mari Terkoneksi</h3>
                     <p>Saya selalu terbuka untuk peluang baru dan kolaborasi yang menarik.</p>
                     <div class="footer__socials">
-                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+                        <a href="https://github.com/PompaEmas" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/edwin-manshande-244684352/" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/edwin_does_art/" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="mailto:edwinhaholonganmanshande@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
                     </div>
                 </div>
                 <div class="footer__copyright">
-                    <p>&copy; 2023 Edwin Manshande. Dibuat dengan dedikasi.</p>
+                    <p>&copy; 2026 Edwin Manshande. Dibuat dengan dedikasi.</p>
                 </div>
             </div>
         </div>
